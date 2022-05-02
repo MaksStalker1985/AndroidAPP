@@ -3,6 +3,8 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Projects/MelodiesRinger/AndroidAPP/app/src/main/res/layout/activity_main.xml" value="0.13541666666666666" />
+        <entry key="..\:/Projects/MelodiesRinger/AndroidAPP/app/src/main/res/layout/activity_music_list.xml" value="0.22083333333333333" />
         <entry key="..\:/Projects/MelodiesRinger/app/src/main/res/drawable/roundbutton.xml" value="0.1945" />
         <entry key="..\:/Projects/MelodiesRinger/app/src/main/res/layout/activity_main.xml" value="0.33" />
         <entry key="..\:/Projects/MelodiesRinger/app/src/main/res/layout/activity_media_player.xml" value="0.33" />
