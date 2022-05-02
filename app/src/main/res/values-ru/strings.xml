@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="appEnable">Включить Melodies Ringer</string>
+    <string name="appDisable">Выключить Melodies Ringer</string>
+    <string name="appVersion">Версия:</string>
+    <string name="appPlayer">Музыкальный Проигрыватель</string>
+    <string name="selectButton">Выберите музыку...</string>
+    <string name="aboutButton">О программе...</string>
+</resources>

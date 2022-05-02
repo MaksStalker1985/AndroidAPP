@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name" translatable="false">Melodies Ringer</string>
+    <string name="appEnable">Enable Melodies Ringer</string>
+    <string name="appDisable">Disable Melodies Ringer</string>
+    <string name="appVersion">Version:</string>
+    <string name="appPlayer">Media Player</string>
+    <string name="selectButton">Select music...</string>
+    <string name="aboutButton">About...</string>
+</resources>
