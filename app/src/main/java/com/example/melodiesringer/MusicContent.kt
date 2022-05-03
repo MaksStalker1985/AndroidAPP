@@ -12,6 +12,8 @@ abstract class MusicContent {
 }
 
 abstract class Values{
+    public val spref = "melodies ringer"
+    public val spref_name = "status"
     public val TableName = "MusicList"
     public val databaseName = "mringer.db3"
     public val reportName = "mringer.rpt"

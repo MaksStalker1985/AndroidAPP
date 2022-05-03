@@ -54,7 +54,7 @@ class Database_Processor : SQLiteOpenHelper(null,"mringer.db3", null,1) {
         }
         db.insert(values_names.TableName, null,values)
     }
-    public fun readData() {
+    public fun readData():Array<MusicContent> {
         val db = dbHelper.readableDatabase
         val projection = arrayOf(cells.IDCell, cells.NameCell, cells.PathCell, cells.LengthCell,cells.StartCell, cells.StopCell, cells.ActiveCell)
         val cursor = db.query(values_names.TableName,projection,null, null,null,null,null)
@@ -74,7 +74,7 @@ class Database_Processor : SQLiteOpenHelper(null,"mringer.db3", null,1) {
                 }
             }
         }
-
+       return music_data
     }
     public fun updateDB(name : String,startTime : Int, stopTime : Int ,status : Int){
         val db = dbHelper.writableDatabase
