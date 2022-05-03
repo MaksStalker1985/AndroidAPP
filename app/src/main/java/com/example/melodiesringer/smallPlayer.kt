@@ -16,7 +16,7 @@ class smallPlayer {
     }
     public fun startPlay(){
         musicContent = activeList[0]
-        var mPlayer = MediaPlayer.create(this, Uri.parse(musicContent.SongPath))
+       // var mPlayer = MediaPlayer.create(this, Uri.parse(musicContent.SongPath))
 
     }
     public fun stopPlay(){

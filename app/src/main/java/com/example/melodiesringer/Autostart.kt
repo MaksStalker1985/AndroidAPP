@@ -7,8 +7,14 @@ import android.content.Intent
 class Autostart : BroadcastReceiver() {
 
     override fun onReceive(context: Context, intent: Intent) {
-        // This method is called when the BroadcastReceiver is receiving an Intent broadcast.
-        TODO("Autostart.onReceive() is not implemented")
-        val mr = melodiesRingerService()
+
+        when(intent.action){
+            Intent.ACTION_BOOT_COMPLETED ->{
+                val startIntent = Intent(context,MelRingService::class.java)
+                context.startService(startIntent)
+            }
+        }
+
+
     }
 }

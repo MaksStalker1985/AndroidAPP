@@ -18,7 +18,14 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        val system_switch = findViewById<Switch>(R.id.switch1)
         val sharedPreferences: SharedPreferences = this.getSharedPreferences("melodies ringer",Context.MODE_PRIVATE)
+        val i = sharedPreferences.all
+       /* if(i["status"] == 1){
+            system_switch.isChecked = true
+        }else{
+
+        }*/
         val aboutButton = findViewById<Button>(R.id.aboutBtn)
         val editor:SharedPreferences.Editor = sharedPreferences.edit()
         val musicListButton = findViewById<Button>(R.id.musicListButton)
@@ -26,7 +33,9 @@ class MainActivity : AppCompatActivity() {
                 val intent = Intent (this, MusicListActivity::class.java)
                 startActivity(intent)
             }
-        val system_switch = findViewById<Switch>(R.id.switch1)
+        val intt = Intent(this,MelRingService::class.java)
+        this.startService(intt)
+
         system_switch.setOnCheckedChangeListener { compoundButton, b ->
             if(b){
                 try {
